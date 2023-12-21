@@ -47,5 +47,5 @@ Arc::Arc(Point c, int rr, int s, int e) :Circle{ c,rr }
 
 void Arc::draw_lines() const
 {
-	fl_draw(point(0).x, point(0).y, r + r, r + r, beg, end);
+	fl_arc(point(0).x, point(0).y, r + r, r + r, beg, end);
 }
